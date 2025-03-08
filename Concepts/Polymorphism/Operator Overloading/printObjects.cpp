@@ -10,7 +10,6 @@ class Person{
             this->name=name;
             this->age=age;
         }
-
 };
 
 //modifying the << operator to print the object based on the paramaters passed inside
@@ -33,7 +32,6 @@ class Portal{
 
 
 //modifying the << operator to print all the members in the portal by modifying with the argument passed
-
 void operator<<(ostream& COUT,const Portal &p){
     for(auto x:p.members){
         COUT<<x<<endl;
