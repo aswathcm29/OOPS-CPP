@@ -44,6 +44,10 @@ class BankATM : public ATM {
       }
 };
 
+
+
+
+
 int main(){
     //by static binding
     BankATM A(1000,"A");
@@ -64,5 +68,9 @@ int main(){
         x->getBalance();
         x->depositMoney(2000);
         x->getBalance();
+    }
+    
+    for (auto x : branches) {
+        delete x;
     }
 }
