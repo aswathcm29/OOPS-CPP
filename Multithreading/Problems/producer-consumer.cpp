@@ -33,7 +33,7 @@ void consumer() {
             consumed++;
             isProducing = true; 
         }
-        this_thread::sleep_for(chrono::milliseconds(100)); // simulate delay
+        this_thread::sleep_for(chrono::milliseconds(100));
     }
 }
 
